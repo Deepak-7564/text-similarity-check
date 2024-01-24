@@ -17,7 +17,7 @@ Before you begin, ensure you have met the following requirements:
 
 Follow these steps to get your development environment running:
 
-1. **Clone the repository (if applicable)**
+1. **Clone the repository**
 
    ```
    git clone https://github.com/Deepak-7564/text-similarity-check.git
@@ -25,24 +25,24 @@ Follow these steps to get your development environment running:
 
 2. **Navigate to the project directory
 
-  ```
-cd text-similarity-check
-```
+   ```
+   cd text-similarity-check
+   ```
 
 3. Install required packages
 
-```
-pip install -r requirements.txt
-```
+   ```
+   pip install -r requirements.txt
+   ```
 
 This will install all the necessary Python packages as listed in requirements.txt.
 
 ## Running the Application
 To run the application, execute:
 
-```
-python app.py
-```
+   ```
+   python app.py
+   ```
 
 ## API Endpoints
 
@@ -55,65 +55,61 @@ This application provides several endpoints for computing similarities between t
 - **Description:** Computes similarity based on character composition between two texts.
 - **Payload Example:**
 
-```json
-{
-  "text1": "Hello, world!",
-  "text2": "Hello, everyone!"
-}
-
-```
+   ```json
+   {
+     "text1": "Hello, world!",
+     "text2": "Hello, everyone!"
+   }
+   
+   ```
 
 ## Word Overlap Similarity
 Endpoint: /word_similarity
 Method: POST
 Description: Calculates similarity based on the overlap of words between two texts.
 Payload Example:
-```json
-Copy code
-{
-  "text1": "Hello, world!",
-  "text2": "Hello, everyone!"
-}
-```
+   ```json
+   {
+     "text1": "Hello, world!",
+     "text2": "Hello, everyone!"
+   }
+   ```
 
 ## Sentiment-wise Similarity
 Endpoint: /sentiment_similarity
 Method: POST
 Description: Computes similarity based on the sentiment analysis of two texts.
 Payload Example:
-```json
-Copy code
-{
-  "text1": "I love sunny days.",
-  "text2": "Rainy days make me sad."
-}
-```
+   ```json
+   {
+     "text1": "I love sunny days.",
+     "text2": "Rainy days make me sad."
+   }
+   ```
 
 ## Embedding-based Word Similarity
 Endpoint: /embedding_similarity
 Method: POST
 Description: Determines similarity using word embeddings for more nuanced comparisons.
 Payload Example:
-```json
-Copy code
-{
-  "text1": "I enjoy reading books.",
-  "text2": "Reading novels is my hobby."
-}
-```
+   ```json
+   {
+     "text1": "I enjoy reading books.",
+     "text2": "Reading novels is my hobby."
+   }
+   ```
 
 ## All Similarities
 Endpoint: /all_similarities
 Method: POST
 Description: Returns a comprehensive analysis including character-wise, word overlap, embedding-based, and sentiment-wise similarities between two texts.
 Payload Example:
-```json
-Copy code
-{
-  "text1": "Exploring the world is fulfilling.",
-  "text2": "Traveling brings joy and enlightenment."
-}
-```
+   ```json
+   {
+     "text1": "Exploring the world is fulfilling.",
+     "text2": "Traveling brings joy and enlightenment."
+   }
+   ```
 
 Each endpoint expects a JSON payload with two keys: text1 and text2, representing the texts to compare. The response will include the similarity score(s) based on the specific comparison method.
 

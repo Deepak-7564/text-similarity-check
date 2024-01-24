@@ -66,8 +66,8 @@ This application provides several endpoints for computing similarities between t
 ## Word Overlap Similarity
 - **Endpoint:** `/word_similarity`
 - **Method:** `POST`
-- **Description:** `Calculates similarity based on the overlap of words between two texts.
-Payload Example:
+- **Description:** `Calculates similarity based on the overlap of words between two texts.`
+- **Payload Example:**
    ```json
    {
      "text1": "Hello, world!",
@@ -76,10 +76,10 @@ Payload Example:
    ```
 
 ## Sentiment-wise Similarity
-Endpoint: /sentiment_similarity
-Method: POST
-Description: Computes similarity based on the sentiment analysis of two texts.
-Payload Example:
+- **Endpoint:** `/sentiment_similarity`
+- **Method:** 'POST'
+- **Description:** `Computes similarity based on the sentiment analysis of two texts.`
+- **Payload Example:**
    ```json
    {
      "text1": "I love sunny days.",
@@ -88,10 +88,10 @@ Payload Example:
    ```
 
 ## Embedding-based Word Similarity
-Endpoint: /embedding_similarity
-Method: POST
-Description: Determines similarity using word embeddings for more nuanced comparisons.
-Payload Example:
+- **Endpoint:** `/embedding_similarity`
+- **Method:** `POST`
+- **Description:** `Determines similarity using word embeddings for more nuanced comparisons.`
+- **Payload Example:**
    ```json
    {
      "text1": "I enjoy reading books.",
@@ -100,10 +100,10 @@ Payload Example:
    ```
 
 ## All Similarities
-Endpoint: /all_similarities
-Method: POST
-Description: Returns a comprehensive analysis including character-wise, word overlap, embedding-based, and sentiment-wise similarities between two texts.
-Payload Example:
+- **Endpoint:** `/all_similarities`
+- **Method:** `POST`
+- **Description:** `Returns a comprehensive analysis including character-wise, word overlap, embedding-based, and sentiment-wise similarities between two texts.`
+- **Payload Example:**
    ```json
    {
      "text1": "Exploring the world is fulfilling.",

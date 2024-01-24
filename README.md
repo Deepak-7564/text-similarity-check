@@ -64,9 +64,9 @@ This application provides several endpoints for computing similarities between t
    ```
 
 ## Word Overlap Similarity
-Endpoint: /word_similarity
-Method: POST
-Description: Calculates similarity based on the overlap of words between two texts.
+- **Endpoint:** `/word_similarity`
+- **Method:** `POST`
+- **Description:** `Calculates similarity based on the overlap of words between two texts.
 Payload Example:
    ```json
    {
